@@ -350,6 +350,8 @@ function getConverter(dataFormat: EnumValues<typeof dataFormats>) {
 type Populate = { populate: Record<string, Populate | true | undefined> };
 
 function getPopulateFromSchema(slug: string, deepness = 5): Populate | true | undefined {
+  const FILTER_ATTRIBUTES = ['CreatedByStaff', 'Categories', 'MedicalSpecialty', 'RelatedPosts'];
+
   if (deepness <= 1) {
     return true;
   }
@@ -363,6 +365,10 @@ function getPopulateFromSchema(slug: string, deepness = 5): Populate | true | un
   for (const [attributeName, attribute] of Object.entries(getModelPopulationAttributes(model))) {
     if (!attribute) {
       continue;
+    }
+
+    if (FILTER_ATTRIBUTES.includes(attributeName)) {
+      continue
     }
 
     if (isComponentAttribute(attribute)) {
