@@ -101,5 +101,6 @@
     "url": "https://github.com/Baboo7/strapi-plugin-import-export-entries/issues"
   },
   "homepage": "https://github.com/Baboo7/strapi-plugin-import-export-entries#readme",
-  "license": "MIT"
+  "license": "MIT",
+  "packageManager": "yarn@4.3.0"
 }
