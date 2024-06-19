@@ -27,9 +27,9 @@ const DEFAULT_OPTIONS = {
 
 export const ExportModal = ({ availableExportFormats = [dataFormats.CSV, dataFormats.JSON_V2, dataFormats.JSON], unavailableOptions = [], onClose }) => {
   const { i18n } = useI18n();
-  const { search } = useLocation();
+  const { pathname, search } = useLocation();
   const { downloadFile, withTimestamp } = useDownloadFile();
-  const { slug, isSlugWholeDb } = useSlug();
+  const { slug, postID, isSlugWholeDb } = useSlug();
   const { notify } = useAlerts();
   const { getPreferences } = useLocalStorage();
 
@@ -45,11 +45,17 @@ export const ExportModal = ({ availableExportFormats = [dataFormats.CSV, dataFor
 
   const getData = async () => {
     setFetchingData(true);
+    let searchData = qs.stringify(pick(qs.parse(search), ['filters', 'sort']));
+    let applyFilters = options.applyFilters;
+    if (postID) {
+      searchData = `filters[$and][0][id][$eq]=${postID}`;
+      applyFilters = true;
+    }
     try {
       const res = await api.exportData({
         slug,
-        search: qs.stringify(pick(qs.parse(search), ['filters', 'sort'])),
-        applySearch: options.applyFilters,
+        search: searchData,
+        applySearch: applyFilters,
         exportFormat: options.exportFormat,
         relationsAsId: options.relationsAsId,
         deepness: options.deepness,
@@ -96,6 +102,7 @@ export const ExportModal = ({ availableExportFormats = [dataFormats.CSV, dataFor
             </Typography>
             <Typography textColor="neutral800" id="title">
               {isSlugWholeDb ? i18n('plugin.export.whole-database', 'Whole database') : slug}
+              {postID && ` - ${postID}`}
             </Typography>
           </Flex>
         </ModalHeader>
