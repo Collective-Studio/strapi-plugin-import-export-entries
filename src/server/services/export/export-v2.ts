@@ -43,6 +43,8 @@ const dataConverterConfigs = {
   },
 };
 
+const FILTER_ATTRIBUTES = ['CreatedByStaff', 'Categories', 'MedicalSpecialty', 'RelatedPosts'];
+
 export type Export = {
   version: 2;
   data: ExportData;
@@ -413,6 +415,10 @@ function buildSlugHierarchy(slug: SchemaUID, deepness = 5): Hierarchy {
   for (const [attributeName, attribute] of Object.entries(getModelPopulationAttributes(model)) as [string, Attribute][]) {
     if (!attribute) {
       continue;
+    }
+
+    if (FILTER_ATTRIBUTES.includes(attributeName)) {
+      continue
     }
 
     if (isComponentAttribute(attribute)) {
