@@ -66,7 +66,7 @@ type RelationEntry =
 // | (WithI18n<StrapiRelationValue<'morphMany', any>> & EntryBase)
 // | (WithI18n<StrapiRelationValue<'morphToOne', any>> & EntryBase)
 // | (WithI18n<StrapiRelationValue<'morphToMany', any>> & EntryBase);
-type EntryBase = { id: EntryId };
+type EntryBase = { id?: EntryId };
 type EntryId = number | string;
 type WithI18n<T> = UnwrapArray<T> & {
   localizations?: UnwrapArray<T>[];

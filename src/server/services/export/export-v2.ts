@@ -185,7 +185,8 @@ async function findEntriesForHierarchy(
     entriesFlatten = entriesFlatten.map((entry) => flattenEntry(entry, slug));
   })();
 
-  store = mergeObjects({ [slug]: Object.fromEntries(entriesFlatten.map((entry) => [entry.id, entry])) }, store);
+  store = mergeObjects({ [slug]: Object.fromEntries(entriesFlatten.map((entry) => [entry.id, ((entry: Entry) => { delete entry.id; return entry })(entry)])) }, store);
+  console.log("store", store)
 
   // Skip admin::user slug.
   const filterOutUnwantedRelations = () => {

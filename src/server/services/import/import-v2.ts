@@ -148,7 +148,7 @@ const importMedia = async (slugEntries: SlugEntries, { user, fileIdToDbId }: { u
   for (let [fileId, fileEntry] of fileEntries) {
     try {
       const dbEntry = await findOrImportFile(fileEntry, user, { allowedFileTypes: ['any'] });
-      if (dbEntry) {
+      if (dbEntry && dbEntry.id) {
         fileIdToDbId.setMapping('plugin::upload.file', fileId, dbEntry?.id);
       }
     } catch (err: any) {
@@ -244,7 +244,7 @@ const updateOrCreate = async (
   } else {
     dbEntry = await updateOrCreateCollectionTypeEntry(user, slug, fileId, fileEntry, { idField, importStage, fileIdToDbId });
   }
-  if (dbEntry) {
+  if (dbEntry && dbEntry.id) {
     fileIdToDbId.setMapping(slug, fileId, dbEntry.id);
   }
 };
