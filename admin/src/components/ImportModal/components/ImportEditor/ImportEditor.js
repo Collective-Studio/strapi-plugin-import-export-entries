@@ -10,7 +10,7 @@ export const ImportEditor = ({ file, data, dataFormat, slug, onDataChanged, onOp
   const { i18n } = useI18n();
   const [attributeNames, setAttributeNames] = useState([]);
 
-  const { options, getOption, setOption } = useForm({ idField: 'id' });
+  const { options, getOption, setOption } = useForm({ idField: 'Slug' });
 
   useEffect(() => {
     const fetchAttributeNames = async () => {
@@ -51,7 +51,7 @@ export const ImportEditor = ({ file, data, dataFormat, slug, onDataChanged, onOp
               <Select
                 label={i18n('plugin.form.field.id-field.label')}
                 hint={i18n('plugin.form.field.id-field.hint')}
-                onClear={() => setOption('idField', 'id')}
+                onClear={() => setOption('idField', 'Slug')}
                 value={getOption('idField')}
                 onChange={(value) => setOption('idField', value)}
               >
