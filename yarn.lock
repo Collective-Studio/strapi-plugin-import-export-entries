@@ -3,7 +3,7 @@
 
 __metadata:
   version: 8
-  cacheKey: 10
+  cacheKey: 10c0
 
 "@ampproject/remapping@npm:^2.2.0":
   version: 2.2.0
@@ -1557,6 +1557,47 @@ __metadata:
   checksum: 10/9e1548cad78e772abcfc4afca4b1917ddfb1a49c45151350c61cf7e39cb317c445208f2013db474144a3c417bf133a50d9509c0c646d69371c03c91d515520f0
   languageName: node
   linkType: hard
+
+"@collective-design-agency/strapi-plugin-import-export-entries@workspace:.":
+  version: 0.0.0-use.local
+  resolution: "@collective-design-agency/strapi-plugin-import-export-entries@workspace:."
+  dependencies:
+    "@babel/core": "npm:^7.18.5"
+    "@babel/eslint-parser": "npm:^7.18.2"
+    "@babel/preset-react": "npm:^7.17.12"
+    "@faker-js/faker": "npm:^7.5.0"
+    "@monaco-editor/react": "npm:4.4.5"
+    "@strapi/plugin-i18n": "npm:^4.10.5"
+    "@strapi/plugin-seo": "npm:^1.8.0"
+    "@strapi/plugin-users-permissions": "npm:^4.10.5"
+    "@strapi/strapi": "npm:^4.10.5"
+    "@types/fs-extra": "npm:^11.0.1"
+    "@types/jest": "npm:^29.5.8"
+    "@types/node-fetch": "npm:^2.6.3"
+    better-sqlite3: "npm:^9.1.1"
+    csvtojson: "npm:2.0.10"
+    deepmerge: "npm:^4.2.2"
+    eslint: "npm:^8.23.0"
+    eslint-plugin-jest: "npm:^27.0.1"
+    eslint-plugin-react: "npm:^7.30.1"
+    eslint-plugin-simple-import-sort: "npm:^8.0.0"
+    jest: "npm:^29.0.2"
+    joi: "npm:17.6.0"
+    lodash: "npm:4.17.21"
+    monaco-editor: "npm:0.33.0"
+    monaco-editor-webpack-plugin: "npm:7.0.1"
+    node-fetch: "npm:2.6.9"
+    nodemon: "npm:^2.0.22"
+    prettier: "npm:^2.7.1"
+    react-singleton-hook: "npm:3.3.0"
+    standard-version: "npm:^9.5.0"
+    supertest: "npm:^6.2.4"
+    ts-jest: "npm:^29.1.1"
+    typescript: "npm:^5.0.3"
+  peerDependencies:
+    "@strapi/strapi": ^4.10.5
+  languageName: unknown
+  linkType: soft
 
 "@colors/colors@npm:1.5.0":
   version: 1.5.0
@@ -16062,47 +16103,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"strapi-plugin-import-export-entries@workspace:.":
-  version: 0.0.0-use.local
-  resolution: "strapi-plugin-import-export-entries@workspace:."
-  dependencies:
-    "@babel/core": "npm:^7.18.5"
-    "@babel/eslint-parser": "npm:^7.18.2"
-    "@babel/preset-react": "npm:^7.17.12"
-    "@faker-js/faker": "npm:^7.5.0"
-    "@monaco-editor/react": "npm:4.4.5"
-    "@strapi/plugin-i18n": "npm:^4.10.5"
-    "@strapi/plugin-seo": "npm:^1.8.0"
-    "@strapi/plugin-users-permissions": "npm:^4.10.5"
-    "@strapi/strapi": "npm:^4.10.5"
-    "@types/fs-extra": "npm:^11.0.1"
-    "@types/jest": "npm:^29.5.8"
-    "@types/node-fetch": "npm:^2.6.3"
-    better-sqlite3: "npm:^9.1.1"
-    csvtojson: "npm:2.0.10"
-    deepmerge: "npm:^4.2.2"
-    eslint: "npm:^8.23.0"
-    eslint-plugin-jest: "npm:^27.0.1"
-    eslint-plugin-react: "npm:^7.30.1"
-    eslint-plugin-simple-import-sort: "npm:^8.0.0"
-    jest: "npm:^29.0.2"
-    joi: "npm:17.6.0"
-    lodash: "npm:4.17.21"
-    monaco-editor: "npm:0.33.0"
-    monaco-editor-webpack-plugin: "npm:7.0.1"
-    node-fetch: "npm:2.6.9"
-    nodemon: "npm:^2.0.22"
-    prettier: "npm:^2.7.1"
-    react-singleton-hook: "npm:3.3.0"
-    standard-version: "npm:^9.5.0"
-    supertest: "npm:^6.2.4"
-    ts-jest: "npm:^29.1.1"
-    typescript: "npm:^5.0.3"
-  peerDependencies:
-    "@strapi/strapi": ^4.10.5
-  languageName: unknown
-  linkType: soft
-
 "stream-chain@npm:2.2.5, stream-chain@npm:^2.2.5":
   version: 2.2.5
   resolution: "stream-chain@npm:2.2.5"
@@ -17486,8 +17486,8 @@ __metadata:
   linkType: hard
 
 "webpack-dev-middleware@npm:^5.3.1":
-  version: 5.3.3
-  resolution: "webpack-dev-middleware@npm:5.3.3"
+  version: 5.3.4
+  resolution: "webpack-dev-middleware@npm:5.3.4"
   dependencies:
     colorette: "npm:^2.0.10"
     memfs: "npm:^3.4.3"
@@ -17496,7 +17496,7 @@ __metadata:
     schema-utils: "npm:^4.0.0"
   peerDependencies:
     webpack: ^4.0.0 || ^5.0.0
-  checksum: 10/31a2f7a11e58a76bdcde1eb8da310b6643844d9b442f9916f48be5b46c103f23490c393c32a9af501ce68226fbb018b811f5a956635ed60a03f9481a4bcd6c76
+  checksum: 10c0/257df7d6bc5494d1d3cb66bba70fbdf5a6e0423e39b6420f7631aeb52435afbfbff8410a62146dcdf3d2f945c62e03193aae2ac1194a2f7d5a2523b9d194e9e1
   languageName: node
   linkType: hard
 
