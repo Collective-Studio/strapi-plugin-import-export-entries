@@ -2,6 +2,8 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [1.23.5](https://github.com/Baboo7/strapi-plugin-import-export-entries/compare/v1.23.4...v1.23.5) (2024-06-25)
+
 ### [1.23.4](https://github.com/Baboo7/strapi-plugin-import-export-entries/compare/v1.23.3...v1.23.4) (2024-06-25)
 
 ### [1.23.3](https://github.com/Baboo7/strapi-plugin-import-export-entries/compare/v1.21.1...v1.23.3) (2024-06-25)
