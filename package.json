@@ -1,6 +1,6 @@
 {
-  "name": "strapi-plugin-import-export-entries",
-  "version": "1.23.1",
+  "name": "@collective-design-agency/strapi-plugin-import-export-entries",
+  "version": "1.23.3",
   "description": "Import/Export data from and to your database in just few clicks.",
   "strapi": {
     "name": "import-export-entries",
@@ -70,17 +70,17 @@
     "@strapi/strapi": "^4.10.5"
   },
   "author": {
-    "name": "Baboo",
-    "url": "https://github.com/Baboo7"
+    "name": "hoangvietfreelancer",
+    "url": "https://github.com/hoangvietfreelancer"
   },
   "maintainers": [
     {
-      "name": "Baboo",
-      "url": "https://github.com/Baboo7"
+      "name": "hoangvietfreelancer",
+      "url": "https://github.com/hoangvietfreelancer"
     }
   ],
   "engines": {
-    "node": ">=14.19.1 <=20.x.x",
+    "node": ">=18.x.x <=20.x.x",
     "npm": ">=6.0.0"
   },
   "keywords": [

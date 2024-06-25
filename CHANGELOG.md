@@ -2,6 +2,53 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [1.23.3](https://github.com/Baboo7/strapi-plugin-import-export-entries/compare/v1.21.1...v1.23.3) (2024-06-25)
+
+
+### 🐞 Bug Fixes
+
+* **import-v2:** Import media files once ([f0a4518](https://github.com/Baboo7/strapi-plugin-import-export-entries/commits/f0a4518421a11968f0c6903d4f4088c680ba1e9b))
+* **types:** Fix typing ([5c86e4f](https://github.com/Baboo7/strapi-plugin-import-export-entries/commits/5c86e4f5bc42a68c1e0d852c4092930729c4db84))
+
+
+### 🧪 Tests
+
+* **config:** Define global strapi for ts ([de75c22](https://github.com/Baboo7/strapi-plugin-import-export-entries/commits/de75c22fe876eaae97e24b2d1063c3d2ccbc5b9f))
+* **import:** Set restaurant name unique ([99f1221](https://github.com/Baboo7/strapi-plugin-import-export-entries/commits/99f1221f7c6ba53647daf909353f6641c1be08c6))
+* **import:** Setup import file ([b3e14bb](https://github.com/Baboo7/strapi-plugin-import-export-entries/commits/b3e14bb9bfa4036570c0b0fd9536a570a87a957e))
+* **import:** Test update data ([8b47c9f](https://github.com/Baboo7/strapi-plugin-import-export-entries/commits/8b47c9fbe81c783506b9ba30e48a329b30089a37))
+* **jest:** Update globals ([de2383e](https://github.com/Baboo7/strapi-plugin-import-export-entries/commits/de2383ec5bd3340485fa68bfe9372424ec99bab4))
+
+
+### 🧹 Chores
+
+* **release:** 1.22.0 ([40483f2](https://github.com/Baboo7/strapi-plugin-import-export-entries/commits/40483f233346eef7f808da2343948f41a03a8c1d))
+* **release:** 1.22.1 ([decf851](https://github.com/Baboo7/strapi-plugin-import-export-entries/commits/decf851cbfad16025197c603cc5b067778a7625c))
+* **release:** 1.22.2 ([f483419](https://github.com/Baboo7/strapi-plugin-import-export-entries/commits/f48341931dc95b428d0bcaac85b7cf38b14be6ba))
+* **release:** 1.23.0 ([ee7fc35](https://github.com/Baboo7/strapi-plugin-import-export-entries/commits/ee7fc354f4aa008fac2aa72ba67bd92322ca06f9))
+* **release:** 1.23.1 ([da0a5d3](https://github.com/Baboo7/strapi-plugin-import-export-entries/commits/da0a5d3633faad041e8d410a621783fdc0535489))
+* **settings:** Match latest vscode version ([cc8a328](https://github.com/Baboo7/strapi-plugin-import-export-entries/commits/cc8a3283bc8597bb84c90fbffb13b8a967637c97))
+* Setup ts jest ([fdd406b](https://github.com/Baboo7/strapi-plugin-import-export-entries/commits/fdd406b14bc46da9e0c71a1aadc94db1c38adfcd))
+* Support node v20.x.x ([1c8f591](https://github.com/Baboo7/strapi-plugin-import-export-entries/commits/1c8f5917cfac12129af1be1934736694f61d7708))
+* Update node version ([8b24d01](https://github.com/Baboo7/strapi-plugin-import-export-entries/commits/8b24d01507c570a94eefffc1c04c0efc8bbe6cca))
+* update to new yarn ([27a1438](https://github.com/Baboo7/strapi-plugin-import-export-entries/commits/27a14383d0d6c2877ff777af8bb25f2738282744))
+
+
+### ⚡️ Features
+
+* 🎸 Added uk locale ([0049591](https://github.com/Baboo7/strapi-plugin-import-export-entries/commits/00495915d50281901b87f1ebe07c8e51b4b6a24c))
+* allow export single post in collection types ([3d752c8](https://github.com/Baboo7/strapi-plugin-import-export-entries/commits/3d752c80ad57d5b9467d0c872e5c2128090cd2eb))
+* delete id from export entry ([2a0c789](https://github.com/Baboo7/strapi-plugin-import-export-entries/commits/2a0c789fbe1d7cc9560f3b487291cd9c48a642d1))
+* filter out unused attributes ([03306ff](https://github.com/Baboo7/strapi-plugin-import-export-entries/commits/03306ff22f408352ae91cf4573a67128274548a2))
+* **import-v2:** Import media of components ([131294b](https://github.com/Baboo7/strapi-plugin-import-export-entries/commits/131294b875d4788055e92f9c95af757bfa7c0106))
+* move filter to another process ([56287c1](https://github.com/Baboo7/strapi-plugin-import-export-entries/commits/56287c145b75cb6172c56e2f3f1171dbdd383e06))
+* set default import idField to Slug ([a7672f7](https://github.com/Baboo7/strapi-plugin-import-export-entries/commits/a7672f7a29210943df55ff7b7048133b60421a1b))
+
+
+### 🛠 Refacto
+
+* remove unused code ([10d39ba](https://github.com/Baboo7/strapi-plugin-import-export-entries/commits/10d39badb62c4815d8fd244d9b72a6f6364e5633))
+
 ### [1.23.1](https://github.com/Baboo7/strapi-plugin-import-export-entries/compare/v1.23.0...v1.23.1) (2023-12-27)
 
 ## [1.23.0](https://github.com/Baboo7/strapi-plugin-import-export-entries/compare/v1.22.2...v1.23.0) (2023-12-23)
