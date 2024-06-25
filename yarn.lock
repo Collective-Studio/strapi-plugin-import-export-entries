@@ -3,7 +3,7 @@
 
 __metadata:
   version: 8
-  cacheKey: 10
+  cacheKey: 10c0
 
 "@ampproject/remapping@npm:^2.2.0":
   version: 2.2.0
@@ -1557,6 +1557,47 @@ __metadata:
   checksum: 10/9e1548cad78e772abcfc4afca4b1917ddfb1a49c45151350c61cf7e39cb317c445208f2013db474144a3c417bf133a50d9509c0c646d69371c03c91d515520f0
   languageName: node
   linkType: hard
+
+"@collective-design-agency/strapi-plugin-import-export-entries@workspace:.":
+  version: 0.0.0-use.local
+  resolution: "@collective-design-agency/strapi-plugin-import-export-entries@workspace:."
+  dependencies:
+    "@babel/core": "npm:^7.18.5"
+    "@babel/eslint-parser": "npm:^7.18.2"
+    "@babel/preset-react": "npm:^7.17.12"
+    "@faker-js/faker": "npm:^7.5.0"
+    "@monaco-editor/react": "npm:4.4.5"
+    "@strapi/plugin-i18n": "npm:^4.10.5"
+    "@strapi/plugin-seo": "npm:^1.8.0"
+    "@strapi/plugin-users-permissions": "npm:^4.10.5"
+    "@strapi/strapi": "npm:^4.10.5"
+    "@types/fs-extra": "npm:^11.0.1"
+    "@types/jest": "npm:^29.5.8"
+    "@types/node-fetch": "npm:^2.6.3"
+    better-sqlite3: "npm:^9.1.1"
+    csvtojson: "npm:2.0.10"
+    deepmerge: "npm:^4.2.2"
+    eslint: "npm:^8.23.0"
+    eslint-plugin-jest: "npm:^27.0.1"
+    eslint-plugin-react: "npm:^7.30.1"
+    eslint-plugin-simple-import-sort: "npm:^8.0.0"
+    jest: "npm:^29.0.2"
+    joi: "npm:17.6.0"
+    lodash: "npm:4.17.21"
+    monaco-editor: "npm:0.33.0"
+    monaco-editor-webpack-plugin: "npm:7.0.1"
+    node-fetch: "npm:2.6.9"
+    nodemon: "npm:^2.0.22"
+    prettier: "npm:^2.7.1"
+    react-singleton-hook: "npm:3.3.0"
+    standard-version: "npm:^9.5.0"
+    supertest: "npm:^6.2.4"
+    ts-jest: "npm:^29.1.1"
+    typescript: "npm:^5.0.3"
+  peerDependencies:
+    "@strapi/strapi": ^4.10.5
+  languageName: unknown
+  linkType: soft
 
 "@colors/colors@npm:1.5.0":
   version: 1.5.0
@@ -8617,12 +8658,12 @@ __metadata:
   linkType: hard
 
 "follow-redirects@npm:^1.0.0, follow-redirects@npm:^1.15.0":
-  version: 1.15.2
-  resolution: "follow-redirects@npm:1.15.2"
+  version: 1.15.6
+  resolution: "follow-redirects@npm:1.15.6"
   peerDependenciesMeta:
     debug:
       optional: true
-  checksum: 10/8be0d39919770054812537d376850ccde0b4762b0501c440bd08724971a078123b55f57704f2984e0664fecc0c86adea85add63295804d9dce401cd9604c91d3
+  checksum: 10c0/9ff767f0d7be6aa6870c82ac79cf0368cd73e01bbc00e9eb1c2a16fbb198ec105e3c9b6628bb98e9f3ac66fe29a957b9645bcb9a490bb7aa0d35f908b6b85071
   languageName: node
   linkType: hard
 
@@ -16061,47 +16102,6 @@ __metadata:
   checksum: 10/f83f174e13750c6405a2befdec065b43674e5a1632db33d65e9f60c862eb13cede69e0649d83b223ff1d3a127b3656b39b920d230b5cf7b2f088e07ada6bc65b
   languageName: node
   linkType: hard
-
-"strapi-plugin-import-export-entries@workspace:.":
-  version: 0.0.0-use.local
-  resolution: "strapi-plugin-import-export-entries@workspace:."
-  dependencies:
-    "@babel/core": "npm:^7.18.5"
-    "@babel/eslint-parser": "npm:^7.18.2"
-    "@babel/preset-react": "npm:^7.17.12"
-    "@faker-js/faker": "npm:^7.5.0"
-    "@monaco-editor/react": "npm:4.4.5"
-    "@strapi/plugin-i18n": "npm:^4.10.5"
-    "@strapi/plugin-seo": "npm:^1.8.0"
-    "@strapi/plugin-users-permissions": "npm:^4.10.5"
-    "@strapi/strapi": "npm:^4.10.5"
-    "@types/fs-extra": "npm:^11.0.1"
-    "@types/jest": "npm:^29.5.8"
-    "@types/node-fetch": "npm:^2.6.3"
-    better-sqlite3: "npm:^9.1.1"
-    csvtojson: "npm:2.0.10"
-    deepmerge: "npm:^4.2.2"
-    eslint: "npm:^8.23.0"
-    eslint-plugin-jest: "npm:^27.0.1"
-    eslint-plugin-react: "npm:^7.30.1"
-    eslint-plugin-simple-import-sort: "npm:^8.0.0"
-    jest: "npm:^29.0.2"
-    joi: "npm:17.6.0"
-    lodash: "npm:4.17.21"
-    monaco-editor: "npm:0.33.0"
-    monaco-editor-webpack-plugin: "npm:7.0.1"
-    node-fetch: "npm:2.6.9"
-    nodemon: "npm:^2.0.22"
-    prettier: "npm:^2.7.1"
-    react-singleton-hook: "npm:3.3.0"
-    standard-version: "npm:^9.5.0"
-    supertest: "npm:^6.2.4"
-    ts-jest: "npm:^29.1.1"
-    typescript: "npm:^5.0.3"
-  peerDependencies:
-    "@strapi/strapi": ^4.10.5
-  languageName: unknown
-  linkType: soft
 
 "stream-chain@npm:2.2.5, stream-chain@npm:^2.2.5":
   version: 2.2.5
